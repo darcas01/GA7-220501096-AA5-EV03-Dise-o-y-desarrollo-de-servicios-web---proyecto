@@ -1,0 +1,3 @@
+com\darwuich\compensapp\login\Servlets\LoginServlets.class
+com\darwuich\compensapp\login\resources\JakartaEE10Resource.class
+com\darwuich\compensapp\login\JakartaRestConfiguration.class

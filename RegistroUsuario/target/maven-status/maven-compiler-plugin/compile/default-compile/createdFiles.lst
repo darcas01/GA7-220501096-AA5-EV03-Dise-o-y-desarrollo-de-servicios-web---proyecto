@@ -1,0 +1,3 @@
+com\darwuich\compensapp\registrousuario\JakartaRestConfiguration.class
+com\darwuich\compensapp\registrousuario\servlets\RegistroServlet.class
+com\darwuich\compensapp\registrousuario\resources\JakartaEE10Resource.class

@@ -1,0 +1,3 @@
+com\darwuich\compensapp\cancelarcita\servlets\CancelarCitaServlet.class
+com\darwuich\compensapp\cancelarcita\JakartaRestConfiguration.class
+com\darwuich\compensapp\cancelarcita\resources\JakartaEE10Resource.class

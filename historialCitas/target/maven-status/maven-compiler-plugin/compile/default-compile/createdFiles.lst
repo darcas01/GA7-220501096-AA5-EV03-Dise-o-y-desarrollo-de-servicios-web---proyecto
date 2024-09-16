@@ -1,0 +1,4 @@
+com\darwuich\compensapp\historialcitas\models\Cita.class
+com\darwuich\compensapp\historialcitas\servlets\HistorialCitasServlet.class
+com\darwuich\compensapp\historialcitas\JakartaRestConfiguration.class
+com\darwuich\compensapp\historialcitas\resources\JakartaEE10Resource.class

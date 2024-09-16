@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Citas - CompensApp</title>
+    <link rel="stylesheet" href="historialCitas.css">
+</head>
+<body>
+    <div class="container">
+         <div class="header">
+            <img align="right" src="Compensarsalud.jpg" width="30%" height="30%">
+            <img src="CorazonAzulSalud.jpg" alt="CorazonAzulSalud" class= "center-image" width="30%" height="50%">
+        </div>
+         <h2>CompensApp</h2>
+        <h2>Historial de Citas</h2>
+        <form id="historialCitasForm" action="HistorialCitasServlet" method="post">
+            <label for="documento">Número de Documento:</label>
+            <input type="text" id="documento" name="documento" required>
+            <button type="submit">Ver Historial</button>
+        </form>
+        <div id="historialCitas">
+            <!-- Aquí se mostrarán las citas del usuario -->
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 - Aplicación de Citas Médicas</p>
+            <p>Línea nacional: 01 8000 91 52 02</p>
+            <p>Línea de atención EPS Bogotá y Cundinamarca: 601 4441234</p>
+               <a href="https://www.facebook.com/Compensarinfo"><img src="Facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/Compensar_info"><img src="x.png" alt="X"></a>
+                <a href="https://www.youtube.com/user/Compensarinfo"><img src="Youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="modificarCita.jsp"></script>
+</body>
+</html>

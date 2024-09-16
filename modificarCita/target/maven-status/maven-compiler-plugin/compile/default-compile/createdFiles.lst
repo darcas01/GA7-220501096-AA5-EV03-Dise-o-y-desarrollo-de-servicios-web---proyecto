@@ -1,0 +1,3 @@
+com\darwuich\compensapp\modificarcita\JakartaRestConfiguration.class
+com\darwuich\compensapp\modificarcita\servlets\ModificarCitaServlet.class
+com\darwuich\compensapp\modificarcita\resources\JakartaEE10Resource.class

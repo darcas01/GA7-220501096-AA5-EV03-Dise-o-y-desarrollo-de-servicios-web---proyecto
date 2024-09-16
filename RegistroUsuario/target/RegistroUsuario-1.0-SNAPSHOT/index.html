@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - CompensApp</title>
+    <link rel="stylesheet" href="Registrocss.css">
+</head>
+<body>
+    <div class="container">
+        <img align="right" src="Compensarsalud.jpg" width="20%" height="20%">
+        <div class="header">
+            <img src="CorazonAzulSalud.jpg" alt="Corazon Azul Salud" class="center-image" width="50%" height="50%">
+            <h2>CompensApp</h2>
+        </div>
+        <form id="registroForm" method="post" action="RegistroServlet">
+            <label for="nombreUsuario">Nombre de Usuario:</label>
+            <input type="text" id="nombreUsuario" name="nombreUsuario" required>
+            
+            <label for="apellidosUsuario">Apellidos Usuario:</label>
+            <input type="text" id="apellidosUsuario" name="apellidosUsuario" required>
+            
+            <label for="tipoDocumento">Tipo de documento de identidad:</label>
+            <input type="text" id="tipoDocumento" name="tipoDocumento" required>
+            
+            <label for="numeroDocumento">Número de Documento:</label>
+            <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+            
+            <label for="fechaNacimiento">F. Nacimiento Usuario (DD/MM/AAAA):</label>
+            <input type="text" id="fechaNacimiento" name="fechaNacimiento" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirmPassword">Confirmar Contraseña:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            
+            <button type="submit">Registrarse</button>
+            <p id="errorMessage" class="error"></p>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 - Aplicación de Citas Médicas</p>
+            <p>Línea nacional: 01 8000 91 52 02</p>
+            <p>Línea de atención EPS Bogotá y Cundinamarca: 601 4441234</p>
+           <a href="https://www.facebook.com/Compensarinfo"><img src="Facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/Compensar_info"><img src="x.png" alt="X"></a>
+                <a href="https://www.youtube.com/user/Compensarinfo"><img src="Youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="modificarCita.jsp"></script>
+</body>
+</html>
