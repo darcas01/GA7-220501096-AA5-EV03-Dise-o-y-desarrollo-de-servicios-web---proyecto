@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompensApp</title>
+    <link rel="stylesheet" href="EstilosLogin.css">
+</head>
+<body>
+    <div class="container">
+        <img align="right" src="Compensarsalud.jpg" class="small-image" alt="Compensar Salud"> 
+        <img src="CorazonAzulSalud.jpg" alt="CorazonAzulSalud" class="center-image" width="20%" height="50%"> 
+        <h2>CompensApp</h2>
+        <form id="loginForm" action="http://localhost:5000/auth/login" method="post">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required> <!-- Cambiado a "username" -->
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required> <!-- Cambiado a "password" -->
+            <button type="submit">Iniciar Sesión</button>
+            <p id="errorMessage" class="error">
+                <script>
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const error = urlParams.get('error');
+                    if (error === 'invalid_credentials') {
+                        document.write('Credenciales no válidas');
+                    } else if (error === 'server_error') {
+                        document.write('Ocurrió un error. Inténtalo de nuevo más tarde.');
+                    }
+                </script>
+            </p>
+            <button type="button" onclick="window.location.href='register.html'">Registrarse</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Compensar Salud</p>
+            <p>Línea nacional: 01 8000 91 52 02</p>
+            <p>Línea de atención EPS Bogotá y Cundinamarca: 601 4441234</p>
+            <a href="https://www.facebook.com/Compensarinfo"><img src="Facebook.png" alt="Facebook" class="social-icon"/></a>
+            <a href="https://x.com/Compensar_info"><img src="Red-X-Twitter.jpg" alt="X" class="social-icon"/></a>
+            <a href="https://www.youtube.com/user/Compensarinfo"><img src="Youtube.png" alt="YouTube" class="social-icon"/></a>
+        </div>
+    </footer>
+    <script src="Scriptinicio_de_sesion.js"></script>
+</body>
+</html>
